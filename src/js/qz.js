@@ -1,9 +1,13 @@
-/* eslint-disable prefer-destructuring */
+import img1 from '../img/wt/quiz1.png';
+import img2 from '../img/wt/quiz2.png';
+import img3 from '../img/wt/quiz3.png';
+import img4 from '../img/wt/quiz4.png';
+
 const imgArr = [
-	'./img/wt/quiz1.png',
-	'./img/wt/quiz2.png',
-	'./img/wt/quiz3.png',
-	'./img/wt/quiz4.png',
+	img1,
+	img2,
+	img3,
+	img4,
 ];
 const quiz = document.querySelector('.quiz');
 const pageArr = [
@@ -96,12 +100,12 @@ for (let i = 0; i < btn4.length; i++) {
 				pageArr[j][pageArr[j].length - 1]++;
 			}
 		}
-		console.log(pageArr);
+		// console.log(pageArr);
 		const numTextArr = [];
 		for (let s = 0; s < pageArr.length; s++) {
 			numTextArr.push(pageArr[s][pageArr[s].length - 1]);
 		}
-		console.log(numTextArr);
+		// console.log(numTextArr);
 		const MaxText = Math.max(...numTextArr);
 		localStorage.setItem('Max', numTextArr.indexOf(MaxText));
 		window.location.href = 'result.html';
