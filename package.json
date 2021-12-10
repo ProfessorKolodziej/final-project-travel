@@ -23,8 +23,6 @@
     "boilerplate",
     "webpack"
   ],
-
-
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --config ./config/webpack.config.js",
     "start:dist": "cross-env NODE_ENV=production webpack-dev-server --config ./config/webpack.config.js && http-server ./dist -o",
@@ -112,5 +110,4 @@
     "normalize.css": "^8.0.1",
     "webpack-dev-server": "^4.0.0"
   }
-
 }
