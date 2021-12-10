@@ -8,7 +8,6 @@ module.exports = {
   context: path.join(config.root, config.paths.src),
   entry: [
     path.join(config.root, config.paths.src, 'js/scripts.js'),
-    path.join(config.root, config.paths.src, 'css/styles.scss'),
   ],
   output: {
     path: path.join(config.root, config.paths.dist),
@@ -17,7 +16,9 @@ module.exports = {
   mode: ['production', 'development'].includes(config.env)
     ? config.env
     : 'development',
-  stats: 'errors-only',
+  stats: {
+  	children: true
+  },
   devtool: config.env === 'production' ? 'hidden-source-map' : 'eval-cheap-source-map',
   devServer: {
     client: {

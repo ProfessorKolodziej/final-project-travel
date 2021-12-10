@@ -51,15 +51,6 @@ const postcssLoader = {
 	},
 };
 
-const css = {
-	test: /\.css$/,
-	use: [
-		config.env === 'production' ? MiniCssExtractPlugin.loader : styleLoader,
-		cssLoader,
-		postcssLoader,
-	],
-};
-
 const sass = {
 	test: /\.s[c|a]ss$/,
 	use: [
@@ -133,7 +124,6 @@ const videos = {
 module.exports = [
 	html,
 	js,
-	css,
 	sass,
 	images,
 	fonts,
