@@ -8,9 +8,10 @@ module.exports = {
 		"guard-for-in": 0,
 		"no-restricted-syntax": 0,
 		"no-plusplus": 0,
-		"camelcase": 'off', '@typescript-eslint/camelcase':0,
-	
-
+		"camelcase": 'off',
+		'@typescript-eslint/camelcase':0,
+		'prefer-destructuring': 0,
+		'func-names': 0,
 	},
 	"env": {
 		"browser": true,
