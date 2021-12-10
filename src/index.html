@@ -1,51 +1,54 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>HOME PAGE</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-<header>
-    <nav>
-        <div class="logo">
-            <img src="./img/logo.png" alt="">
-        </div>
-        <div class="menu">
-            <a href="index.html" class="active">HOME</a>
-            <div class="linese"></div>
-            <a href="destination.html">SEARCH</a>
-            <div class="linese"></div>
-            <a href="wt.html">QUIZ</a>
-            <div class="linese"></div>
-            <a href="destination.html">DESTINATION</a>
-        </div>
-    </nav>
-</header>
-<div class="banner">
-    <img src="img/home page.png"/>
-    <div class="box_mark"></div>
-    <div class="banner_box">
-        <div class="banner_title">HELLO, ADVENTURER!</div>
-        <div class="banner_btns">
-            <div class="banner_btn1">I am looking for a destination</div>
-            <div class="banner_btn2">I know my destination</div>
-        </div>
-    </div>
-</div>
-<script>
-    var banner_btn1 = document.querySelector(".banner_btn1");
-    var banner_btn2 = document.querySelector(".banner_btn2");
-    banner_btn1.onclick = function () {
-        window.location.href = 'wt.html';
-    }
-    banner_btn2.onclick = function () {
-        window.location.href = 'destination.html';
-    }
-</script>
+	<header>
+		<nav>
+			<div class="logo">
+				<img src="./img/logo.png" alt="">
+			</div>
+			<div class="menu">
+				<a href="index.html" class="active">HOME</a>
+				<div class="linese"></div>
+				<a href="destination.html">SEARCH</a>
+				<div class="linese"></div>
+				<a href="wt.html">QUIZ</a>
+				<div class="linese"></div>
+				<a href="destination.html">DESTINATION</a>
+			</div>
+		</nav>
+	</header>
+	<div class="banner">
+		<img src="img/home page.png" />
+		<div class="box_mark"></div>
+		<div class="banner_box">
+			<div class="banner_title">HELLO, ADVENTURER!</div>
+			<div class="banner_btns">
+				<div class="banner_btn1">I am looking for a destination</div>
+				<div class="banner_btn2">I know my destination</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var banner_btn1 = document.querySelector(".banner_btn1");
+		var banner_btn2 = document.querySelector(".banner_btn2");
+		banner_btn1.onclick = function () {
+			window.location.href = 'wt.html';
+		}
+		banner_btn2.onclick = function () {
+			window.location.href = 'destination.html';
+		}
+	</script>
 </body>
+
 </html>
